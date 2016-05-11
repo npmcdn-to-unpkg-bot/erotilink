@@ -1,0 +1,18 @@
+{
+  "name": "erotilink",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Adrien Dauvergne"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Adau/erotilink",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
