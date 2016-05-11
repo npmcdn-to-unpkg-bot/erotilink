@@ -5,5 +5,24 @@
 
 //== Scaffolding
 
-$body-bg: #3a3a3a;
+$body-bg:     #3a3a3a;
 $text-color:  #fff;
+
+
+//== Typography
+
+$font-family-sans-serif:  "Myriad Pro", Helvetica, Arial, sans-serif !default;
+
+
+//== Components
+
+$border-radius-base:    0;
+$border-radius-large:   0;
+$border-radius-small:   0;
+
+
+//== Buttons
+
+$btn-default-color:              $text-color;
+$btn-default-bg:                 #000;
+$btn-default-border:             $btn-default-bg;

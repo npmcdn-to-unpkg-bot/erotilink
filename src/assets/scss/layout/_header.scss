@@ -1,0 +1,35 @@
+header {
+  position: relative;
+}
+
+.header__logo {
+  padding: 24px 114px;
+  background-color: #c01717;
+  text-align: center;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 40px 0;
+  }
+}
+
+.header__description {
+  margin: 0 (-$grid-gutter-width / 2);
+  padding: 12px 0;
+  background-color: #9d2222;
+  font-size: 28px;
+  text-align: center;
+
+  @media (min-width: $screen-sm-min) {
+    transform: translate3d(0, -3px, 0) rotate(-5deg);
+    transform-origin: top left;
+    width: 290px;
+    padding: 26px 42px;
+    background-color: $body-bg;
+    font-size: 33px;
+    text-transform: uppercase;
+  }
+}
+
+.btn-member {
+  margin-top: $line-height-computed;
+}
