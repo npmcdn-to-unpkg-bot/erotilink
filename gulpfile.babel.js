@@ -26,8 +26,7 @@ gulp.task('styles', () => {
     // Compilation des fichiers Sass
     .pipe($.sass({
         includePaths: [
-            'bower_components/bootstrap/scss',
-            'bower_components/font-awesome-sass/assets/stylesheets'
+            'bower_components/bootstrap-sass/assets/stylesheets'
         ]
     }).on('error', $.sass.logError))
 
