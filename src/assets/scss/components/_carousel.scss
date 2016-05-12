@@ -6,7 +6,7 @@
   position: inherit;
 
   > h1 {
-    font-size: 75px;
+    font-size: 5.5em;
   }
 
   > h1 small {
@@ -17,7 +17,7 @@
 .carousel-control {
   bottom: 0;
   /* Soustraire la hauteur de .carousel-caption qui n'est plus positionnée en absolue */
-  height: calc(100% - 162.5px);
+  height: calc(100% - 164.7px);
 }
 
 .carousel-control.left,
