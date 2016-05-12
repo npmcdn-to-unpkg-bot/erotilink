@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="fr" ng-app="landingApp">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
 
@@ -32,10 +32,10 @@
     </div>
   </header>
 
-  <div class="container" ng-controller="LandingController as landing">
+  <div class="container">
 
     <!-- Etape 1 -->
-    <div ng-show="showStep1">
+    <div class="step-1">
       <h1 class="text-center text-uppercase hidden-xs">Le plus dur sera de faire un choix !!</h1>
 
       <div class="row visible-xs">
@@ -58,11 +58,11 @@
 
       <div id="carousel" class="carousel slide" data-interval="false">
         <div class="carousel-inner">
-          <div class="item" ng-class="{active:$first}" ng-repeat="user in landing.users">
-            <img class="img-thumbnail center-block" src="dist/assets/img/photos/{{ user.picture }}" width="364" alt="Photo">
+          <div class="item active">
+            <img class="img-thumbnail center-block" src="dist/assets/img/photos/1.jpg" width="364" alt="Photo">
             <div class="container">
               <div class="carousel-caption">
-                <h1 class="user__name">{{ user.name }}, <small>{{ user.age }} ans</small></h1>
+                <h1 class="user__name">Laeticia, <small>27 ans</small></h1>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
 
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <button type="button" class="btn btn-success btn-lg btn-block" ng-click="landing.showStep(2)">
+          <button type="button" class="btn btn-success btn-lg btn-block">
             <span class="hidden-xs">Lui proposer un Rendez-vous</span>
             <span class="visible-xs text-uppercase">Prendre un Rendez-vous</span>
           </button>
@@ -89,7 +89,7 @@
     </div>
 
     <!-- Etape 2 -->
-    <div ng-show="showStep2">
+    <div class="step-2 hidden">
       <div class="row">
         <div class="col-md-6">
           <img class="img-thumbnail center-block" src="dist/assets/img/photos/1.jpg" width="364" alt="Photo 1">

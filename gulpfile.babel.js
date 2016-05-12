@@ -56,7 +56,6 @@ gulp.task('scripts', () => {
     return gulp.src([
         'bower_components/jquery/dist/jquery.js',
         'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
-        'bower_components/angular/angular.js',
         `${source}/assets/js/**/*`
     ])
 
@@ -65,9 +64,6 @@ gulp.task('scripts', () => {
 
     // Concaténation des fichiers JavaScript
     .pipe($.concat('main.js'))
-
-    // Annotation des fonctions Angular
-    .pipe($.ngAnnotate())
 
     // Minification des fichiers JS
     .pipe($.uglify())

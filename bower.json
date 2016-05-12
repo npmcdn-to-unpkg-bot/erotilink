@@ -16,7 +16,6 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap-sass": "^3.3.6",
-    "angular": "^1.5.5"
+    "bootstrap-sass": "^3.3.6"
   }
 }
