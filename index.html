@@ -56,13 +56,13 @@
         </div>
       </div>
 
-      <div id="carousel" class="carousel slide">
+      <div id="carousel" class="carousel slide" data-interval="false">
         <div class="carousel-inner">
           <div class="item" ng-class="{active:$first}" ng-repeat="user in landing.users">
-            <img class="img-thumbnail center-block" src="dist/assets/img/photos/{{ user.picture }}" alt="Photo 1">
+            <img class="img-thumbnail center-block" src="dist/assets/img/photos/{{ user.picture }}" width="364" alt="Photo">
             <div class="container">
               <div class="carousel-caption">
-                <h1>{{ user.name }}, <small>{{ user.age }} ans</small></h1>
+                <h1 class="user__name">{{ user.name }}, <small>{{ user.age }} ans</small></h1>
               </div>
             </div>
           </div>
@@ -90,7 +90,42 @@
 
     <!-- Etape 2 -->
     <div ng-show="showStep2">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-thumbnail center-block" src="dist/assets/img/photos/1.jpg" width="364" alt="Photo 1">
+        </div>
 
+        <div class="col-md-6 text-center">
+          <h1 class="user__name">Laeticia, <small>27 ans</small></h1>
+          <h2>Lui proposer un Rendez-vous</h2>
+
+          <form class="form-horizontal" role="form">
+              <div class="form-group form-group-lg">
+                <div class="col-sm-7">
+                  <label class="control-label btn-block">Jour souhaité :</label>
+                </div>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control text-center" placeholder="15/02/16">
+                </div>
+              </div>
+
+              <div class="form-group form-group-lg">
+                <div class="col-sm-7">
+                  <label class="control-label btn-block">Heure souhaitée :</label>
+                </div>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control text-center" placeholder="18h">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <button type="submit" class="btn btn-success btn-lg btn-block text-uppercase">Envoyer</button>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
     </div>
 
     <div class="row hidden-xs">

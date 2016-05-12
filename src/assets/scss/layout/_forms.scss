@@ -1,0 +1,15 @@
+.form-horizontal [class^="col-"] {
+  @media (min-width: $screen-sm-min) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.form-horizontal .control-label {
+  text-align: center;
+  background-color: $brand-danger;
+}
+
+.form-group-lg .control-label {
+  height: $input-height-large;
+}

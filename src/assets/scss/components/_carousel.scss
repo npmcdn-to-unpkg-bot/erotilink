@@ -4,12 +4,12 @@
 
 .carousel-caption {
   position: inherit;
+}
 
-  > h1 {
-    font-size: 5.5em;
-  }
+.user__name {
+  font-size: 5.5em;
 
-  > h1 small {
+  > small {
     color: $text-color;
   }
 }
