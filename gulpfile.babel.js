@@ -14,7 +14,7 @@ const destination = './dist';
 $.browserSync.create();
 
 gulp.task('default', ['build']);
-gulp.task('build', ['styles', 'scripts', 'images', 'copy']);
+gulp.task('build', ['styles', 'scripts', 'images', 'templates']);
 
 // Génération du fichier de style principal
 gulp.task('styles', () => {
@@ -92,17 +92,26 @@ gulp.task('images', () => {
         .pipe(gulp.dest(`${destination}/assets/img`));
 });
 
-// Copie des fichiers de données dans le répertoire de distribution
-gulp.task('copy', () => {
-    return gulp.src(`${source}/data/**/*.json`)
+// Génération du template à partir des données du fichier JSON
+gulp.task('templates', () => {
+    return gulp.src(`${source}/templates/users.html`)
+        .pipe($.swig({
+            defaults: {
+                cache: false,
+                // locals: {
+                //     users: `${source}/data/users.json`
+                // }
+            },
+            load_json: true,
+            json_path: `${source}/data/`
+        }))
+        .pipe($.rename('index.html'))
+        .pipe(gulp.dest('.'))
 
-    // Écriture des fichiers de données
-    .pipe(gulp.dest(`${destination}/data`))
-
-    // Rechargement de la page
-    .pipe($.browserSync.reload({
-        stream: true
-    }));
+        // Rechargement de la page
+        .pipe($.browserSync.reload({
+            stream: true
+        }));
 });
 
 // Initialisation de Browsersync pour le rechargement automatiques des pages
@@ -119,5 +128,5 @@ gulp.task('watch', ['browserSync', 'build'], () => {
     gulp.watch('index.html', $.browserSync.reload);
     gulp.watch(`${source}/assets/scss/**/*.scss`, ['styles']);
     gulp.watch(`${source}/assets/js/**/*.js`, ['scripts']);
-    gulp.watch(`${source}/data/**/*.json`, ['copy']);
+    gulp.watch([`${source}/templates/**/*.html`, `${source}/data/resume.json`], ['templates']);
 });
