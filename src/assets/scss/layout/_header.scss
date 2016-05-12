@@ -4,7 +4,7 @@ header {
 
 .header__logo {
   padding: 24px 114px;
-  background-color: #c01717;
+  background-color: $brand-danger;
   text-align: center;
 
   @media (min-width: $screen-sm-min) {
@@ -13,7 +13,7 @@ header {
 }
 
 .header__description {
-  margin: 0 (-$grid-gutter-width / 2);
+  margin: 0 (-$grid-gutter-width / 2) $line-height-computed;
   padding: 12px 0;
   background-color: #9d2222;
   font-size: 28px;

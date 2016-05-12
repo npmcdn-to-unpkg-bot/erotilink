@@ -1,6 +1,11 @@
 @import 'helpers/bootstrap-variables';
 @import 'bootstrap';
 
+@import 'components/carousel';
+
+@import 'helpers/helpers';
+
 @import 'layout/header';
+@import 'layout/footer';
 
 @import 'pages/home';

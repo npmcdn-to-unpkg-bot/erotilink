@@ -1,0 +1,33 @@
+.carousel {
+  margin-top: ($line-height-computed * 2);
+}
+
+.carousel-caption {
+  position: inherit;
+
+  > h1 {
+    font-size: 75px;
+  }
+
+  > h1 small {
+    color: $text-color;
+  }
+}
+
+.carousel-control {
+  bottom: 0;
+  /* Soustraire la hauteur de .carousel-caption qui n'est plus positionnée en absolue */
+  height: calc(100% - 162.5px);
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}

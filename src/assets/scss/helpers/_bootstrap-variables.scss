@@ -3,6 +3,12 @@
 // --------------------------------------------------
 
 
+//== Colors
+
+$brand-success: #23b613;
+$brand-danger: #c01717;
+
+
 //== Scaffolding
 
 $body-bg:     #3a3a3a;
@@ -14,6 +20,11 @@ $text-color:  #fff;
 $font-family-sans-serif:  "Myriad Pro", Helvetica, Arial, sans-serif !default;
 
 
+//== Iconography
+
+$icon-font-path: '../../../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
+
+
 //== Components
 
 $border-radius-base:    0;
@@ -23,6 +34,13 @@ $border-radius-small:   0;
 
 //== Buttons
 
-$btn-default-color:              $text-color;
-$btn-default-bg:                 #000;
-$btn-default-border:             $btn-default-bg;
+$btn-info-color:              $text-color;
+$btn-info-bg:                 #000;
+$btn-info-border:             $btn-info-bg;
+
+
+//== Thumbnails
+
+$thumbnail-padding:           16px;
+$thumbnail-bg:                $text-color;
+$thumbnail-border:            transparent;

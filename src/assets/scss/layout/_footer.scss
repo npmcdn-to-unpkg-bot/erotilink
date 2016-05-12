@@ -1,0 +1,23 @@
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 286px;
+  height: 133px;
+  margin: ($line-height-computed * 2) auto;
+  padding: 27px 0;
+  border-radius: 10px;
+  background-color: $brand-danger;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+}
+
+.footer__description {
+  margin-bottom: 0;
+  padding: 12px 80px;
+  background-color: #9d2222;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+}
