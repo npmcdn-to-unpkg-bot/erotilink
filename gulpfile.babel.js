@@ -14,7 +14,7 @@ const destination = './dist';
 $.browserSync.create();
 
 gulp.task('default', ['build']);
-gulp.task('build', ['styles', 'scripts', 'images']);
+gulp.task('build', ['styles', 'scripts', 'images', 'copy']);
 
 // Génération du fichier de style principal
 gulp.task('styles', () => {
@@ -56,6 +56,7 @@ gulp.task('scripts', () => {
     return gulp.src([
         'bower_components/jquery/dist/jquery.js',
         'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+        'bower_components/angular/angular.js',
         `${source}/assets/js/**/*`
     ])
 
@@ -64,6 +65,9 @@ gulp.task('scripts', () => {
 
     // Concaténation des fichiers JavaScript
     .pipe($.concat('main.js'))
+
+    // Annotation des fonctions Angular
+    .pipe($.ngAnnotate())
 
     // Minification des fichiers JS
     .pipe($.uglify())
@@ -92,6 +96,19 @@ gulp.task('images', () => {
         .pipe(gulp.dest(`${destination}/assets/img`));
 });
 
+// Copie des fichiers de données dans le répertoire de distribution
+gulp.task('copy', () => {
+    return gulp.src(`${source}/data/**/*.json`)
+
+    // Écriture des fichiers de données
+    .pipe(gulp.dest(`${destination}/data`))
+
+    // Rechargement de la page
+    .pipe($.browserSync.reload({
+        stream: true
+    }));
+});
+
 // Initialisation de Browsersync pour le rechargement automatiques des pages
 gulp.task('browserSync', () => {
     $.browserSync.init({
@@ -106,4 +123,5 @@ gulp.task('watch', ['browserSync', 'build'], () => {
     gulp.watch('index.html', $.browserSync.reload);
     gulp.watch(`${source}/assets/scss/**/*.scss`, ['styles']);
     gulp.watch(`${source}/assets/js/**/*.js`, ['scripts']);
+    gulp.watch(`${source}/data/**/*.json`, ['copy']);
 });
