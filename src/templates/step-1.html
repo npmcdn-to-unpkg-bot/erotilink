@@ -19,38 +19,41 @@
     </div>
   </div>
 
-  <div id="carousel" class="carousel slide" data-interval="false">
-    <div class="carousel-inner">
-      {% for user in users %}
-        <div class="item {% if loop.first %}active{% endif %}">
-          <img class="img-thumbnail center-block" src="dist/assets/img/photos/{{ user.picture }}" width="364" alt="Photo">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 class="user__name">{{ user.name }}, <small>{{ user.age }} ans</small></h1>
+  <form class="js-form-step-1">
+    <div id="carousel" class="carousel slide js-carousel" data-interval="false">
+      <div class="carousel-inner">
+        {% for user in users %}
+          <div class="item {% if loop.first %}active{% endif %}">
+            <img class="img-thumbnail center-block" src="dist/assets/img/photos/{{ user.picture }}" width="364" alt="Photo">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="user__name">{{ user.name }}, <small>{{ user.age }} ans</small></h1>
+                <input type="radio" class="hidden" name="user" value="{{ user|json }}" {% if loop.first %}checked{% endif %}>
+              </div>
             </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
+
+      <a class="left carousel-control hidden-xs" href="#carousel" data-slide="prev">
+        <img class="carousel-arrow" src="dist/assets/img/arrow-left.png" alt="left">
+      </a>
+      <a class="right carousel-control hidden-xs" href="#carousel" data-slide="next">
+        <img class="carousel-arrow" src="dist/assets/img/arrow-right.png" alt="right">
+      </a>
     </div>
 
-    <a class="left carousel-control hidden-xs" href="#carousel" data-slide="prev">
-      <img class="carousel-arrow" src="dist/assets/img/arrow-left.png" alt="left">
-    </a>
-    <a class="right carousel-control hidden-xs" href="#carousel" data-slide="next">
-      <img class="carousel-arrow" src="dist/assets/img/arrow-right.png" alt="right">
-    </a>
-  </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <button type="submit" class="btn btn-success btn-lg btn-block">
+          <span class="hidden-xs">Lui proposer un Rendez-vous</span>
+          <span class="visible-xs text-uppercase">Prendre un Rendez-vous</span>
+        </button>
 
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <button type="button" class="btn btn-success btn-lg btn-block">
-        <span class="hidden-xs">Lui proposer un Rendez-vous</span>
-        <span class="visible-xs text-uppercase">Prendre un Rendez-vous</span>
-      </button>
-
-      <button type="button" class="btn btn-default btn-lg btn-block visible-xs">Déjà membre ?</button>
+        <button type="button" class="btn btn-default btn-lg btn-block visible-xs">Déjà membre ?</button>
+      </div>
     </div>
-  </div>
+  </form>
 
   <div class="row hidden-xs">
     <div class="col-md-4">
