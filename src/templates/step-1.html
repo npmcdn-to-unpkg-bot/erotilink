@@ -24,7 +24,8 @@
       <div class="carousel-inner">
         {% for user in users %}
           <div class="item {% if loop.first %}active{% endif %}">
-            <img class="img-thumbnail center-block" src="dist/assets/img/photos/{{ user.picture }}" width="364" alt="Photo">
+            <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/{{ user.picture }}" width="364" alt="Photo"> -->
+            <img class="img-thumbnail center-block" src="http://placehold.it/364x364" width="364" alt="Photo">
             <div class="container">
               <div class="carousel-caption">
                 <h1 class="user__name">{{ user.name }}, <small>{{ user.age }} ans</small></h1>

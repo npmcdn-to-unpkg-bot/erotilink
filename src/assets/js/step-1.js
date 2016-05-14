@@ -12,7 +12,8 @@
     user = $.parseJSON(user);
 
     // Remplissage des données de l'utilisatrice de l'étape 2
-    $('.js-user-picture').attr('src', 'dist/assets/img/photos/' + user.picture);
+    // $('.js-user-picture').attr('src', 'dist/assets/img/photos/' + user.picture);
+    $('.js-user-picture').attr('src', 'http://placehold.it/364x364');
     $('.js-user-name').text(user.name);
     $('.js-user-age').text(user.age);
 
