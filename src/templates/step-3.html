@@ -1,3 +1,107 @@
 <div class="step-3 hidden">
-  Foo
-</div>
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img-thumbnail center-block js-user-picture" width="364" alt="Photo">
+
+      <h1 class="user__name text-center">
+        <span class="js-user-name"></span>,
+        <small> <span class="js-user-age"></span> ans</small>
+      </h1>
+    </div>
+
+    <div class="col-md-6">
+      <h2 class="text-center">Finaliser votre demande</h2>
+
+      <form class="form-horizontal js-form-step-3">
+          <div class="form-group form-group-lg">
+            <div class="col-sm-7">
+              <label class="control-label btn-block text-uppercase">Je suis</label>
+            </div>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" placeholder="Un homme">
+            </div>
+          </div>
+
+          <div class="form-group form-group-lg">
+            <div class="col-sm-7">
+              <label class="control-label btn-block text-uppercase">Je recherche</label>
+            </div>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" placeholder="Une femme">
+            </div>
+          </div>
+
+          <div class="form-group form-group-lg">
+            <div class="col-sm-7">
+              <label class="control-label btn-block text-uppercase">Ne(e) le</label>
+            </div>
+            <div class="col-sm-5">
+              <input type="text" class="form-control text-center" size="2" placeholder="jj">
+              <input type="text" class="form-control text-center" size="2" placeholder="mm">
+              <input type="text" class="form-control text-center" size="5" placeholder="aaaa">
+            </div>
+          </div>
+
+          <div class="form-group form-group-lg">
+            <div class="col-sm-7">
+              <label class="control-label btn-block text-uppercase">Email</label>
+            </div>
+            <div class="col-sm-5">
+              <input type="email" class="form-control" placeholder="Information confidentielle">
+            </div>
+          </div>
+
+          <div class="form-group form-group-lg">
+            <div class="col-sm-7">
+              <label class="control-label btn-block text-uppercase">Pseudo</label>
+            </div>
+            <div class="col-sm-5">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group form-group-lg">
+            <div class="col-sm-12">
+              <label>
+                <input type="checkbox">
+                 Je suis majeur(e) et j’accepte les CGU et la politique de vie privée
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-success btn-lg btn-block text-uppercase">Valider</button>
+
+              <small class="help-block text-justify">
+                Les données collectées au cours de votre inscription sont destinées à la société 2L Multimédia, responsable du traitement ainsi qu'à ses partenaires.Elles sont destinées à vous proposer des rencontres en adéquation avec votre personnalité.Vous avez le droit de nous interroger, de rectifier, compléter, mettre à jour, verrouiller ou supprimer les données vous concernant, de vous opposer à leur traitement ou à leur utilisation à des fins de prospection commerciale à l'adresse mentionnée dans les CGU.
+              </small>
+            </div>
+          </div>
+      </form>
+    </div> <!-- end .col-md-6 -->
+  </div> <!-- end .row -->
+
+  <div id="carousel-thumbnails" class="carousel slide hidden-xs" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="row">
+          {% for user in users %}
+            <!-- Remplissage de 6 vignettes par slide -->
+            {% if loop.index0 && loop.index0 % 6 == 0 %}
+              </div> <!-- end .row -->
+              </div> <!-- end .item -->
+
+              <div class="item">
+                <div class="row">
+            {% endif %}
+
+            <div class="col-md-2">
+              <img class="img-thumbnail center-block" src="dist/assets/img/photos/{{ user.picture }}" width="170" alt="Photo">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!-- end .step-3 -->

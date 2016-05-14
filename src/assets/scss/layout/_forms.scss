@@ -13,3 +13,10 @@
 .form-group-lg .control-label {
   height: $input-height-large;
 }
+
+// Les champs texte dont la taille est précisée ne feront pas toute la largeur du conteneur
+// (Exemple : Date de naissance)
+.form-control[size] {
+  display: inline-block;
+  width: auto;
+}
