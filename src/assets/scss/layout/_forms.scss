@@ -1,3 +1,5 @@
+$gutter: 3px;
+
 .form-horizontal [class^="col-"] {
   @media (min-width: $screen-sm-min) {
     padding-left: 0;
@@ -14,9 +16,31 @@
   height: $input-height-large;
 }
 
-// Les champs texte dont la taille est précisée ne feront pas toute la largeur du conteneur
-// (Exemple : Date de naissance)
-.form-control[size] {
-  display: inline-block;
-  width: auto;
+.form-control-date {
+  display: flex;
+
+  .form-control {
+    width: 30%;
+  }
+
+  .form-control-month {
+    margin: 0 $gutter;
+  }
+
+  .form-control-year {
+    flex-grow: 2;
+  }
+}
+
+.form-group {
+  margin-bottom: $gutter;
+}
+
+legend {
+  margin-bottom: $gutter;
+  padding: 7px 0;
+  border-bottom: 0;
+  background-color: $brand-danger;
+  text-transform: uppercase;
+  font-size: 27px;
 }

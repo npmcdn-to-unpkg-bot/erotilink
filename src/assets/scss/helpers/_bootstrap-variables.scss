@@ -13,6 +13,7 @@ $brand-danger: #c01717;
 
 $body-bg:     #3a3a3a;
 $text-color:  #fff;
+$link-color:  $text-color;
 
 
 //== Typography
@@ -37,6 +38,16 @@ $border-radius-small:   0;
 $btn-info-color:              $text-color;
 $btn-info-bg:                 #000;
 $btn-info-border:             $btn-info-bg;
+
+
+//== Forms
+
+$legend-color:  $text-color;
+
+
+//== Form states and alerts
+
+$state-success-text: $brand-success;
 
 
 //== Thumbnails

@@ -406,7 +406,11 @@
           <span class="visible-xs text-uppercase">Prendre un Rendez-vous</span>
         </button>
 
-        <button type="button" class="btn btn-default btn-lg btn-block visible-xs">Déjà membre ?</button>
+        <a class="btn btn-default btn-lg btn-block visible-xs"
+          href="http://rencontre.erotilink.com/f/public/login"
+          role="button">
+          Déjà membre ?
+        </a>
       </div>
     </div>
   </form>
@@ -480,62 +484,75 @@
 
     <div class="step-3 hidden">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4 col-md-offset-1">
+    <h3 class="text-center visible-xs">
+      <span class="glyphicon glyphicon-ok text-success"></span>
+       Rendez-vous en attente
+    </h3>
+
       <img class="img-thumbnail center-block js-user-picture" width="364" alt="Photo">
 
       <h1 class="user__name text-center">
         <span class="js-user-name"></span>,
         <small> <span class="js-user-age"></span> ans</small>
       </h1>
+
+      <a class="btn btn-success btn-lg btn-block text-uppercase visible-xs"
+        href="http://rencontre.erotilink.com/f/public/registration?tr4ck=erotilink"
+        role="button">
+        Finaliser la demande
+      </a>
     </div>
 
-    <div class="col-md-6">
-      <h2 class="text-center">Finaliser votre demande</h2>
+    <div class="col-md-5 col-md-offset-1">
+      <form class="form-horizontal hidden-xs js-form-step-3">
+          <div class="form-group">
+            <legend class="text-center">Finaliser votre demande</legend>
+          </div>
 
-      <form class="form-horizontal js-form-step-3">
           <div class="form-group form-group-lg">
-            <div class="col-sm-7">
+            <div class="col-sm-4">
               <label class="control-label btn-block text-uppercase">Je suis</label>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-8">
               <input type="text" class="form-control" placeholder="Un homme">
             </div>
           </div>
 
           <div class="form-group form-group-lg">
-            <div class="col-sm-7">
+            <div class="col-sm-4">
               <label class="control-label btn-block text-uppercase">Je recherche</label>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-8">
               <input type="text" class="form-control" placeholder="Une femme">
             </div>
           </div>
 
           <div class="form-group form-group-lg">
-            <div class="col-sm-7">
+            <div class="col-sm-4">
               <label class="control-label btn-block text-uppercase">Ne(e) le</label>
             </div>
-            <div class="col-sm-5">
-              <input type="text" class="form-control text-center" size="2" placeholder="jj">
-              <input type="text" class="form-control text-center" size="2" placeholder="mm">
-              <input type="text" class="form-control text-center" size="5" placeholder="aaaa">
+            <div class="col-sm-8 form-control-date">
+              <input type="text" class="form-control form-control-day text-center" placeholder="jj">
+              <input type="text" class="form-control form-control-month text-center" placeholder="mm">
+              <input type="text" class="form-control form-control-year text-center" placeholder="aaaa">
             </div>
           </div>
 
           <div class="form-group form-group-lg">
-            <div class="col-sm-7">
+            <div class="col-sm-4">
               <label class="control-label btn-block text-uppercase">Email</label>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-8">
               <input type="email" class="form-control" placeholder="Information confidentielle">
             </div>
           </div>
 
           <div class="form-group form-group-lg">
-            <div class="col-sm-7">
+            <div class="col-sm-4">
               <label class="control-label btn-block text-uppercase">Pseudo</label>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-8">
               <input type="text" class="form-control">
             </div>
           </div>
@@ -544,7 +561,7 @@
             <div class="col-sm-12">
               <label>
                 <input type="checkbox">
-                 Je suis majeur(e) et j’accepte les CGU et la politique de vie privée
+                 Je suis majeur(e) et j’accepte les <a href="#">CGU</a> et la <a href="#">politique de vie privée</a>
               </label>
             </div>
           </div>
@@ -554,7 +571,9 @@
               <button type="submit" class="btn btn-success btn-lg btn-block text-uppercase">Valider</button>
 
               <small class="help-block text-justify">
-                Les données collectées au cours de votre inscription sont destinées à la société 2L Multimédia, responsable du traitement ainsi qu'à ses partenaires.Elles sont destinées à vous proposer des rencontres en adéquation avec votre personnalité.Vous avez le droit de nous interroger, de rectifier, compléter, mettre à jour, verrouiller ou supprimer les données vous concernant, de vous opposer à leur traitement ou à leur utilisation à des fins de prospection commerciale à l'adresse mentionnée dans les CGU.
+                <small>
+                  Les données collectées au cours de votre inscription sont destinées à la société 2L Multimédia, responsable du traitement ainsi qu'à ses partenaires.Elles sont destinées à vous proposer des rencontres en adéquation avec votre personnalité.Vous avez le droit de nous interroger, de rectifier, compléter, mettre à jour, verrouiller ou supprimer les données vous concernant, de vous opposer à leur traitement ou à leur utilisation à des fins de prospection commerciale à l'adresse mentionnée dans les CGU.
+                </small>
               </small>
             </div>
           </div>
@@ -562,7 +581,7 @@
     </div> <!-- end .col-md-6 -->
   </div> <!-- end .row -->
 
-  <div id="carousel-thumbnails" class="carousel slide hidden-xs" data-ride="carousel">
+  <div id="carousel-thumbnails" class="carousel slide margin-bottom-lg hidden-xs" data-ride="carousel">
     <div class="carousel-inner">
       <div class="item active">
         <div class="row">
@@ -572,7 +591,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/1.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -580,7 +599,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/2.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -588,7 +607,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/3.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -596,7 +615,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/4.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -604,7 +623,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/5.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -612,7 +631,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/6.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -626,7 +645,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/7.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -634,7 +653,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/8.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -642,7 +661,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/9.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -650,7 +669,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/10.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -658,7 +677,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/11.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -666,7 +685,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/12.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -680,7 +699,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/13.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -688,7 +707,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/14.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -696,7 +715,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/15.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -704,7 +723,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/16.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -712,7 +731,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/17.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -720,7 +739,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/18.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -734,7 +753,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/19.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -742,7 +761,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/20.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -750,7 +769,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/21.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -758,7 +777,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/22.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -766,7 +785,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/23.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -774,7 +793,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/24.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -788,7 +807,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/25.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -796,7 +815,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/26.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -804,7 +823,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/27.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -812,7 +831,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/28.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -820,7 +839,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/29.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
             <!-- Remplissage de 6 vignettes par slide -->
@@ -828,7 +847,7 @@
 
             <div class="col-md-2">
               <!-- <img class="img-thumbnail center-block" src="dist/assets/img/photos/30.jpg" width="170" alt="Photo"> -->
-              <img class="img-thumbnail center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
+              <img class="img-thumbnail img-thumbnail-xs center-block" src="http://placehold.it/170x170" width="170" alt="Photo">
             </div>
           
         </div>
