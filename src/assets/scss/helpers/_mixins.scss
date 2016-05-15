@@ -1,0 +1,13 @@
+@mixin replace-text($text: '') {
+  display: inline-block !important;
+  text-indent: -9999px;
+  line-height: 0 !important;
+  overflow: hidden;
+
+  &::after {
+    content: $text;
+    display: block;
+    line-height: initial;
+    text-indent: 0;
+  }
+}

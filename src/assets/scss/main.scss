@@ -4,9 +4,13 @@
 @import 'components/carousel';
 
 @import 'helpers/helpers';
+@import 'helpers/mixins';
 
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/forms';
 
 @import 'pages/home';
+
+@import 'vendors/tool-register-form';
+@import 'vendors-extensions/tool-register-form';

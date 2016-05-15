@@ -1,0 +1,1115 @@
+/**
+ *
+ * CSS personnalisÃ©e du formulaire inscription channel 2
+ * Projet de refonte du formulaire
+ * en cours de dÃ©veloppement et d'optimisation
+ * Centralisation de la CSS dans un dossier unique
+ * SpÃ©cifique au formulaire channel 2 - channel 1
+ *
+ * Il faut sortir les couleurs dans une CSS spÃ©cifique
+ * Il faut nettoyer le odl code et optimiser
+ *
+ * Projets utilisateurs :
+ * Erotilink tpl9 - rencontre.tf1.fr
+ * tf1
+ * socougar tpl5
+ *
+ *
+ * @started     24/12/2015
+ * @updated     05/02/2016 (pour socougar tpl5)
+ * @project     All
+ * @namefile    01_formulaire_ch2_v01.css
+ * @fileversion 1.0.0
+ * @cssversion  css3
+ */
+/********************* OLD CSS *****************************/
+
+/* login setting */
+
+#fieldset-loginGroup input {
+  width: 100% !important;
+  border-radius: 0 !important;
+  height: 30px !important;
+  display: inline-block !important;
+  margin: 2px 0 !important;
+  border: none !important;
+}
+
+#login #ez-login-form-email {
+  max-width: 100% !important;
+  width: 100% !important;
+  border: none !important;
+}
+
+#ez-login-form-chId {
+  width: 100 !important;
+  margin-right: 0 !important;
+  -moz-appearance:none;
+  -ms-appearance:none !important;
+  -webkit-appearance:none;
+    -moz-user-select: none;
+    -ms-user-select: none !important;
+  -webkit-user-select: none;
+  appearance: none;
+  user-select: none;
+  border: none !important;
+  height: 30px !important;
+}
+#login div[id^=ez-login-form-container] button {
+  margin : 0 !important;
+}
+
+
+#ez-login-form-submit {
+  width: 32% !important;
+  height: 30px !important;
+  background-color: #46c026 !important;
+  margin-left: none !important;
+  border: none !important;
+}
+
+#ez-login-form-submit .middle {
+  background-image: none !important;
+  background-color: #46c026 !important;
+  text-align: center !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* end */
+
+
+#form {
+  padding-bottom: 20px;
+}
+
+hr#form {
+  left: 6px;
+  position: absolute;
+  top: 186px;
+  z-index: 1000;
+  color: red;
+  background-color: red;
+  border-color: red;
+}
+
+.conectWith{
+  position: absolute;
+  top: 65px;
+  color: #4f4f4f;
+  left: 15px;
+  font-size: 20px;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+}
+
+.ou {
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    display: inline;
+    left: 50%;
+    margin: auto;
+    padding: 7px;
+    position: absolute;
+    text-align: center;
+    top: 115px;
+    color: #000;
+}
+
+#ez-body [id^=ez-register-form] {
+  margin: auto !important;
+}
+
+
+#ez-body button{
+  width: 100% !important;
+}
+
+#sa_tpl2 #ez-body button,
+#sa_jetmc_tpl2 #ez-body button {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+}
+
+#ez-body h3 {
+  padding: 10px 0 !important;
+/*  border: 1px solid #656565 !important;*/
+  box-sizing: border-box !important;
+  margin-bottom: 90px !important;
+}
+
+#ez-body select {
+  width: 99% !important;
+  height: 39px !important;
+  color: #000 !important;
+  border-color: #6d6d6e !important;
+  border-radius: 0;
+  -moz-appearance:none;
+  -ms-appearance:none !important;
+  -webkit-appearance:none;
+    -moz-user-select: none;
+    -ms-user-select: none !important;
+  -webkit-user-select: none;
+  appearance: none;
+  user-select: none;
+  background: url(/img/infideles/tpl4/arrow.png) #fff no-repeat center right !important;
+  text-indent: 5px;
+}
+
+select option {
+  border: none !important;
+}
+
+
+
+#ez-body dd {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  text-transform: uppercase;
+
+}
+
+
+
+#ez-body [id^=ez-register-form] form#ez-register-form .full dd.clr { height: 0; }
+
+#ez-body dt {
+  width: 40% !important;
+  padding: 10px 0 10px 8px !important;
+  background-color: #dcdcdc !important;
+  margin-right: 1px !important;
+  margin-bottom: 1px !important;
+}
+
+#ez-body dt.cgu-label {
+  background-color: transparent !important;
+}
+
+#ez-body input {
+  width: 57% !important;
+  height: 39px !important;
+  font-family: "Helvetica Neue" !important;
+  margin: auto !important;
+  display: inline-block !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  text-indent: 5px;
+  font-size: 18px !important;
+  color: #000 !important;
+}
+
+#ez-body dd input {
+  width: 99% !important;
+  background-color: #fff;
+  border-color: #6d6d6e !important;
+  color: #000 !important;
+  padding: 0 !important;
+}
+
+#ez-body dt.cgu-label label {
+  width: 440px !important;
+  margin-left: 15px !important;
+  margin-top: 5px !important;
+  color: #000 !important;
+}
+
+#ez-body dt.cgu-label label a {
+  color: #000 !important;
+}
+
+#ez-body input.radio {
+  width: unset !important;
+}
+
+#ez-body input#ez-register-form-cgu {
+  width: unset !important;
+  margin-left: -200px !important;
+/*  width: 10px !important;*/
+        width: auto !important;
+  background-color: transparent !important;
+}
+
+form#ez-register-form .full dd {
+  width: 57% !important;
+}
+
+#ez-body button span {
+  width: 100% !important;
+}
+
+#ez-body #webcam-element label,
+#ez-body #advertising-element label {
+  color: #000 !important;
+}
+
+#ez-body #webcam-element input,
+#ez-body #advertising-element input {
+  vertical-align: middle !important;
+}
+
+#ez-body #ez-register-form-bornDate-day { width:25% !important; margin-right: 1px !important; }
+#ez-body #ez-register-form-bornDate-month { width:25% !important; margin-right: 1px !important; }
+#ez-body #ez-register-form-bornDate-year { width :46.5% !important; }
+
+::-webkit-input-placeholder {
+   color: #000 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000 !important;
+}
+
+:-ms-input-placeholder {
+   color: #000 !important;
+}
+
+.fb_connect {
+  position: absolute !important;
+  margin-top: 50px !important;
+  margin-left: 212px !important;
+}
+
+
+#form #ez-body input[type=radio]{
+  height: unset !important;
+}
+
+#form #ez-body .radio {
+  width: 10px !important;
+  background-color: transparent !important;
+}
+
+#form button {
+  background-color: #65c555 !important;
+  height: 70px !important;
+  border: 1px solid #699a5d !important;
+}
+#ez-register-form button span.middle {
+  text-transform: uppercase !important;
+  font-size: 25px !important;
+  height: 70px !important;
+  color: #fff !important;
+  font-weight: normal !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #fieldset-loginGroup input {
+    width: 33% !important;
+  }
+
+  #login #ez-login-form-email {
+    max-width: 33% !important;
+    width: 33% !important;
+  }
+
+  #ez-login-form-chId {
+    width: 33% !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+/********************* NEW CSS *****************************/
+/* Structure Form */
+#form {
+    background-color: #3a3a3a;
+}
+#al_tpl5 #form { /* affairland tpl5 */
+    background-color: transparent;
+}
+#tf1_tpl #form {
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.30);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.30);
+    -o-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.30);
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.30), Direction=NaN, Strength=25);
+    padding-bottom: 0;
+}
+#rr_tpl5 #form {
+    background-color: transparent;
+}
+#sa_tpl2 #form,
+#sa_jetmc_tpl2 #form {
+    background-color: transparent;
+}
+#sc_tpl5 #form { /* SoCougar tpl5 */
+    background-color: transparent;
+}
+#rr_tpl5 #block-form-to-h3 { /* Rencontres Rondes backgroung form */
+    background-color: #fff;
+    border: solid 1px #d0d0d0;
+}
+#rr_tpl5 h3 {
+    border: solid 1px #d0d0d0;
+    color: #4f4f4f;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#rr_tpl5 h3 span {
+    color: #3295cd;
+}
+#fieldset-ezformstep1,
+[id^=ez-register-form-container] form#ez-register-form h3.legend,
+[id^=ez-register-form-container] fieldset,
+[id^=ez-register-form-container] fieldset dl,
+[id^=ez-register-form-container] #ez-register-form-submit-element /* button search */ {
+    width: 100% !important;
+}
+#ez-body select,
+#ez-body dd input {
+    width: 100% !important;
+}
+form#ez-register-form .full dd {
+    width: 58% !important;
+}
+#ez-body #ez-register-form-bornDate-year {
+    width: 47% !important;
+}
+#tf1_tpl #ez-body #ez-register-form-bornDate-year {
+    width: 48% !important;
+}
+#fieldset-ezformstep1 {
+    padding-top: 0 !important;
+}
+#tf1_tpl #fieldset-ezformstep1 {
+    padding-top: 0 !important;
+}
+
+ /* UtilisÃ© gÃ©nÃ©rique par tous les form */
+form {
+    padding: 20px 18px !important;
+}
+/****************************************/
+
+#al_tpl5 form {
+    padding: 0 !important;
+}
+#tf1_tpl form {
+    padding: 0 0 14px 0 !important;
+}
+#sa_tpl2 form,
+#sa_jetmc_tpl2 form {
+    padding: 0 30px !important;
+}
+#sc_tpl5 form {
+    padding: 10px 0 38px 0 !important;
+}
+
+
+/* Title */
+[id^=ez-register-form-container] form#ez-register-form h3.legend {
+    background-color: #ed2174 !important;
+    color: #fff !important;
+    padding: 15px !important;
+}
+#tf1_tpl [id^=ez-register-form-container] form#ez-register-form h3.legend {
+    background-color: #af3d4e !important;
+}
+#sa_tpl2 [id^=ez-register-form-container] form#ez-register-form h3.legend,
+#sa_jetmc_tpl2 [id^=ez-register-form-container] form#ez-register-form h3.legend {
+    background-color: transparent !important;
+}
+[id^=ez-main-container-] span {
+    font-size: 1.25em !important;
+}
+[id^=ez-main-container-] a.fb_connect span {
+    font-size: initial !important;
+}
+#ez-body h3 {
+    margin-bottom: 66px !important;
+}
+
+/* Bloc champs */
+#tf1_tpl #fieldset-ezformstep1 > dl {
+    left: 13px;
+    margin: -50px 0 0 0;
+    position: relative;
+    width: 97% !important;
+}
+
+/* Champs */
+#ez-body dt {
+    background-color: #fd1175 !important;
+}
+#tf1_tpl #ez-body dt {
+    background-color: #dcdcdc ! important;
+}
+#rr_tpl5 #ez-body dt {
+    background-color: #195781 ! important;
+    border: solid 1px #727b82;
+}
+#sa_tpl2 #ez-body dt,
+#sa_jetmc_tpl2 #ez-body dt {
+    background-color: #be1522 !important;
+}
+#al_tpl5 #ez-body dt,
+#sc_tpl5 #ez-body dt {
+    background-color: #737373 !important;
+}
+#al_tpl5 #ez-body dt.cgu-label,
+#tf1_tpl #ez-body dt.cgu-label,
+#rr_tpl5 #ez-body dt.cgu-label,
+#sa_tpl2 #ez-body dt.cgu-label,
+#sa_jetmc_tpl2 #ez-body dt.cgu-label,
+#sc_tpl5 #ez-body dt.cgu-label {
+    background-color: transparent !important;
+    border: 0;
+}
+#ez-body dt label {
+    color: #fff;
+    font-size: 1.313em;
+}
+#tf1_tpl #ez-body dt label {
+    color: #000;
+}
+[id^=ez-register-form-container] dl dd select {
+    font-size: 1.5em !important;
+}
+#rr_tpl5 #ez-body select,
+#rr_tpl5 #ez-body input { /* Hauteur champs saisie donnÃ©es */
+    background-color: #4f4f4f !important;
+    color: #fff !important;
+    height: 40px !important;
+}
+#al_tpl5 #ez-body select,
+#sc_tpl5 #ez-body select,
+#al_tpl5 #ez-body input,
+#sc_tpl5 #ez-body input {
+    border-color: transparent !important;
+}
+/* CGU */
+#fieldset-ezformstep1 > dl > dt.cgu-label.required {
+    margin: 0 !important;
+    padding: 5px 0 !important;
+}
+#fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p {
+    color: #fff;
+    font-size: 70%;
+    margin-left: 5px;
+    margin-top: 7px;
+    width: 440px !important;
+}
+
+#al_tpl5 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p {
+    font-size: 90%;
+    width: 520px !important;
+}
+
+#tf1_tpl #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p,
+#sa_tpl2 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p,
+#sa_jetmc_tpl2 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p {
+    color: #000;
+}
+#rr_tpl5 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p {
+    color: #434343;
+}
+#fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(1),
+#fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(2) {
+    color: #fff !important;
+}
+
+#tf1_tpl #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(1),
+#tf1_tpl #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(2),
+#sa_tpl2 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(1),
+#sa_jetmc_tpl2 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(1),
+#sa_tpl2 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(2),
+#sa_jetmc_tpl2 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(2) {
+    color: #000 !important;
+}
+#rr_tpl5 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(1),
+#rr_tpl5 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(2) {
+    color: #434343 !important;
+}
+
+#sc_tpl5 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p {
+    color: #000;
+    font-size: 90%;
+    width: 520px !important;
+}
+#sc_tpl5 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(1),
+#sc_tpl5 #fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p > a:nth-child(2) {
+    color: #000 !important;
+}
+
+
+[id^=ez-register-form-container] form#ez-register-form .full dd.cgu-dd {
+    margin-top: 0 !important;
+}
+
+/* Login top form - TF1 */
+#tf1_tpl #log {
+    cursor: pointer;
+}
+#tf1_tpl #login {
+    display: none;
+    width: 100%;
+}
+#tf1_tpl #ez-login-form {
+    padding: 0 !important;
+}
+#tf1_tpl #login #ez-login-form-email,
+#tf1_tpl #fieldset-loginGroup input {
+    border: solid 1px #555 !important;
+}
+
+/* Login top form - Rencontres Rondes tpl5 */
+#rr_tpl5 #login #ez-login-form-email,
+#rr_tpl5 #fieldset-loginGroup input {
+    border: solid 1px rgb(186, 186, 186) !important;
+}
+
+/* Login top form - SoCougar tpl5 */
+#sc_tpl5 form#ez-login-form {
+    padding: 10px 0 0 0 !important;
+}
+#sc_tpl5 #log {
+    cursor: pointer;
+}
+#sc_tpl5 #login {
+    display: none;
+    width: 100%;
+}
+#sc_tpl5 #login #ez-login-form-email,
+#sc_tpl5 #fieldset-loginGroup input {
+    background-color: #eee;
+    border: solid 1px rgb(186, 186, 186) !important;
+    padding-left: 5px;
+    width: 100% !important;
+}
+#sc_tpl5 #login #ez-login-form-email {
+    max-width: 100% !important;
+}
+
+/*
+ * Gestion espace entre tire et bloc champs
+ *
+ * Passer le margin Ã  0 -> Ã©crase le -10px
+ * Permet alors de gÃ©rer espace soit cÃ´tÃ© titre soit cÃ´tÃ© form soit les 2
+ * Test sur affairland tpl5 le 18/02/2016
+ */
+#al_tpl5 [id^=ez-register-form-container] fieldset dl {
+    margin: 0;
+}
+
+
+
+/* Case Ã  cocher */
+#fieldset-ezformstep1 > dl > dt.cgu-label.required {
+/*    margin-top: 0;
+    font-size: 70%;
+    padding: 8px 24px !important;
+    width: 100% !important;*/
+}
+#fieldset-ezformstep1 > dl > dt.cgu-label.required > label {
+/*    color: #fff !important;
+    display: initial !important;
+    margin: 0 !important;
+    padding: 0  !important;
+    width: 100%;*/
+}
+/*#fieldset-ezformstep1 > dl > dt.cgu-label.required > label > p {
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+}*/
+/*#fieldset-ezformstep1 > dl > dd.cgu-dd {  Container case Ã  cocher
+    background: transparent url(/img/01_formulaire/sprite_mobile.png) 0 0 no-repeat !important;
+    content: " " !important;
+    display: inline-block !important;
+    border: solid 1px #fff;
+    margin-top: 0 !important;
+    height: 33px;
+    width: 34px !important;
+}
+#ez-register-form-cgu {  case Ã  cocher
+    background-color: #ccc;
+    border: solid 1px #fff !important;
+}
+
+#fieldset-ezformstep1 > dl {
+    position: relative;
+}
+#ez-register-form-cgu {
+    content: " " !important;
+    display: inline-block !important;
+    width: 34px !important;
+    height: 33px !important;
+    position: relative;
+        top: 210px;
+        left: 0;
+    background: transparent url(/img/01_formulaire/sprite_mobile.png) 0 0 no-repeat !important;
+}*/
+
+
+#cougarmilftpl1 #ez-body {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#cougarmilftpl1 [id^=ez-register-form-container] form#ez-register-form h3.legend {
+    background-color: #b02361 !important;
+}
+
+#cougarmilftpl1 #ez-body dt {
+    background-color: #B02361 !important;
+}
+
+#cougarmilftpl1 #ez-body dt.cgu-label {
+    background-color: transparent !important;
+}
+
+#encontrosmadurastpl1 #ez-body {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#encontrosmadurastpl1 [id^=ez-register-form-container] form#ez-register-form h3.legend {
+    background-color: #b02361 !important;
+}
+
+#encontrosmadurastpl1 #ez-body dt {
+    background-color: #B02361 !important;
+}
+
+#encontrosmadurastpl1 #ez-body dt.cgu-label {
+    background-color: transparent !important;
+}
+
+#encuentramadurastpl1 #ez-body {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#encuentramadurastpl1 [id^=ez-register-form-container] form#ez-register-form h3.legend {
+    background-color: #b02361 !important;
+}
+
+#encuentramadurastpl1 #ez-body dt {
+    background-color: #B02361 !important;
+}
+
+#encuentramadurastpl1 #ez-body dt.cgu-label {
+    background-color: transparent !important;
+}
+
+/**
+ * -------------------------
+ * SpÃ©cifique CSS
+ * -------------------------
+ */
+/* Small devices (tablets, 768px and up) - SM */
+@media (min-width: 768px) {
+    /* Case Ã  cocher */
+    #ez-body input#ez-register-form-cgu {
+        margin-left: -275px !important;
+    }
+    #sc_tpl5 #ez-body input#ez-register-form-cgu {
+        margin-left: -288px !important;
+    }
+
+    /* Top login form tf1 */
+    #tf1_tpl #fieldset-loginGroup input {
+        width: 100% !important;
+    }
+
+    #tf1_tpl #login #ez-login-form-email {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* Login top form - Rencontres Rondes tpl5 */
+    #rr_tpl5 #fieldset-loginGroup input {
+        width: 100% !important;
+    }
+    #rr_tpl5 #login #ez-login-form-email {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    #rr_tpl5 #login div[id^=ez-login-form-container] button {
+        float: left;
+        padding-left: 13px;
+        text-transform: uppercase;
+        width: 35% !important;
+    }
+
+    /* BTN Search */
+    #sc_tpl5 #form button {
+  border: 0 !important;
+    }
+
+
+    /* Etape 2 formulaire inscription - Modifier taille typo */
+    /* Rencontres rondes */
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(12) > label,
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(15) > label,
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(24) > label,
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt.partners-offers-label.optional > label {
+        font-size: 0.875em;
+    }
+    #rr_tpl5 .partners-offers-label {
+        line-height: 1.4em;
+    }
+    #rr_tpl5 #webcam-element {
+        background-color: #4f4f4f;
+        height: 43px;
+        line-height: 43px !important;
+        width: 58.3% !important;
+    }
+    #rr_tpl5 #advertising-element {
+        background-color: #4f4f4f;
+        height: 60px;
+        line-height: 60px !important;
+        width: 58.3% !important;
+    }
+    #rr_tpl5 #webcam-element label,
+    #rr_tpl5 #advertising-element label {
+        padding-left: 10px;
+    }
+    #rr_tpl5 [id^=ez-register-form-container] #ez-register-form-submit2-element {
+        margin-top: 20px !important;
+        width: 100% !important;
+    }
+
+
+    /* SoCougar tpl5 */
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(12) > label,
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(15) > label,
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(24) > label,
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt.partners-offers-label.optional > label {
+        font-size: 0.875em;
+    }
+    #sc_tpl5 .partners-offers-label {
+        line-height: 1.4em;
+    }
+    #sc_tpl5 #webcam-element {
+        background-color: #fff;
+        height: 42px !important;
+        line-height: 42px !important;
+        width: 58.3% !important;
+    }
+    #sc_tpl5 #advertising-element {
+        background-color: #fff;
+        height: 58px !important;
+        line-height: 58px !important;
+        width: 58.3% !important;
+    }
+    #sc_tpl5 #webcam-element label,
+    #sc_tpl5 #advertising-element label {
+        padding-left: 10px;
+    }
+    #sc_tpl5 [id^=ez-register-form-container] #ez-register-form-submit2-element {
+        margin-top: 20px !important;
+        width: 100% !important;
+    }
+
+
+    /* Specifique TF1 Ã©tape 2 */
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt:nth-child(12) > label,
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt:nth-child(15) > label,
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt:nth-child(24) > label,
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt.partners-offers-label.optional > label {
+        font-size: 1.188em;
+    }
+    #tf1_tpl .partners-offers-label {
+        line-height: 1.4em;
+    }
+    #tf1_tpl #fieldset-ezformstep2 > h3 { /* le titre du form */
+        margin-bottom: 25px !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    #tf1_tpl #fieldset-ezformstep2 .full  { /* le bloc de champs Ã©tape 2 */
+        margin-left: 17px !important;
+        width: 96% !important;
+    }
+    #tf1_tpl #ez-body #fieldset-ezformstep2 button#ez-register-form-submit2 { /* Button search */
+        width: 145% !important;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) - MD */
+@media (min-width: 992px) {
+    /* Rustine pour form */
+    #fieldset-ezformstep1,
+    [id^=ez-register-form-container] form#ez-register-form h3.legend,
+    [id^=ez-register-form-container] fieldset,
+    [id^=ez-register-form-container] fieldset dl,
+    [id^=ez-register-form-container] #ez-register-form-submit-element /* button search */
+    {
+        width: 100% !important;
+    }
+    #rr_tpl5 #fieldset-ezformstep1 > dl { /* Largeur globale du form pour tablette 1024 */
+        width: 92% !important;
+    }
+    #tf1_tpl #ez-body #ez-register-form-bornDate-year {
+        width: 46.5% !important;
+    }
+    #ez-body dt label {
+        color: #fff;
+        font-size: 1em;
+    }
+    #ez-body dt {
+  width: 39% !important;
+    }
+/*    #ez-body select,
+    #ez-body dd input {
+        width: 86% !important;
+    }*/
+    #ez-body #ez-register-form-bornDate-year {
+        width: 46% !important;
+    }
+    /* Case Ã  cocher */
+    #ez-body input#ez-register-form-cgu {
+        margin-left: -165px !important;
+    }
+    #sc_tpl5 #ez-body input#ez-register-form-cgu {
+        margin-left: -178px !important;
+    }
+
+    /* placement du fb connect */
+    .fb_connect {
+  margin-left: 142px !important;
+    }
+
+    /* Bloc champs */
+    #tf1_tpl #fieldset-ezformstep1 > dl {
+        left: 13px;
+        margin: -50px 0 0 0px;
+        position: relative;
+        width: 95% !important;
+    }
+
+    /* Largeur champ saisi step1 - SoCougar tpl5 */ /* DÃ©sactiver car conflit avec btn search */
+/*    #sc_tpl5 form#ez-register-form .full dd {
+        width: 59% !important;
+    }*/
+
+    /* Login top form - Rencontres Rondes tpl5 */
+    #rr_tpl5 #login div[id^=ez-login-form-container] button {
+        padding-left: 8px;
+        width: 20% !important;
+    }
+
+
+    /* Etape 2 formulaire inscription - Modifier taille typo */
+    /* Rencontres rondes */
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(12) > label,
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(24) > label,
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt.partners-offers-label.optional > label {
+        font-size: 0.813em;
+    }
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(15) > label {
+        font-size: 0.7em;
+    }
+    #fieldset-ezformstep2 > dl > dt:nth-child(27) > label {
+        font-size: 0.875em;
+    }
+
+
+    /* SoCougar tpl5s */
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(12) > label,
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(24) > label,
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt.partners-offers-label.optional > label {
+        font-size: 0.813em;
+    }
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(15) > label {
+        font-size: 0.7em;
+    }
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(27) > label {
+        font-size: 0.875em;
+    }
+    #sc_tpl #webcam-element {
+        height: 42px !important;
+        line-height: 42px !important;
+    }
+    #sc_tpl5 #advertising-element {
+        height: 58px !important;
+        line-height: 58px !important;
+    }
+
+
+    /* Specifique TF1 Ã©tape 2 */
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt:nth-child(12) > label,
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt:nth-child(24) > label,
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt:nth-child(15) > label,
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt.partners-offers-label.optional > label {
+        font-size: 0.75em
+    }
+    #tf1_tpl .partners-offers-label {
+        line-height: 1em;
+    }
+    #tf1_tpl #fieldset-ezformstep2 > h3 { /* le titre du form */
+        margin-bottom: 25px !important;
+        margin-left: 0 !important;
+        width: 93% !important;
+    }
+    #tf1_tpl #fieldset-ezformstep2 .full  { /* le bloc de champs Ã©tape 2 */
+        margin-left: 15px !important;
+        width: 88% !important;
+    }
+    #tf1_tpl #ez-body #fieldset-ezformstep2 button#ez-register-form-submit2 { /* Button search */
+        float: left;
+        width: 90% !important;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) LG */
+@media (min-width: 1200px) {
+    /* Override rustine media 992 */
+    #fieldset-ezformstep1,
+    [id^=ez-register-form-container] form#ez-register-form h3.legend,
+    [id^=ez-register-form-container] fieldset,
+    [id^=ez-register-form-container] fieldset dl,
+    [id^=ez-register-form-container] #ez-register-form-submit-element /* button search */
+    {
+        width: 100% !important;
+    }
+    #rr_tpl5 #fieldset-ezformstep1 > dl { /* Largeur globale du form - override 992px large */
+        width: 100% !important;
+    }
+    #tf1_tpl [id^=ez-register-form-container] fieldset dl {
+        margin: -40px 0 0 0;
+    }
+    #ez-body dt {
+  width: 40%;
+    }
+    #ez-body dt label {
+        font-size: 1.2em;
+    }
+    #tf1_tpl #ez-body dt label {
+        font-size: 1em;
+    }
+    #rr_tpl5 #ez-body dt label {
+        font-size: 1.125em;
+        line-height: 20px;
+    }
+
+    /* Bloc champs */
+    #tf1_tpl #fieldset-ezformstep1 > dl {
+        left: 14px;
+        width: 95% !important;
+    }
+
+/*    #ez-body select,
+    #ez-body dd input {
+        width: 100% !important;
+    }*/
+    #ez-body #ez-register-form-bornDate-year {
+        width: 47% !important;
+    }
+
+    #tf1_tpl #ez-body #ez-register-form-bornDate-year {
+        width: 46.5% !important;
+    }
+
+    /* Case Ã  cocher */
+    #ez-body input#ez-register-form-cgu {
+        margin-left: -208px !important;
+    }
+    #tf1_tpl #ez-body input#ez-register-form-cgu {
+        margin-left: -170px !important;
+    }
+    #rr_tpl5 #ez-body input#ez-register-form-cgu {
+        margin-left: -202px !important;
+    }
+    #sa_tpl2 #ez-body input#ez-register-form-cgu,
+    #sa_jetmc_tpl2 #ez-body input#ez-register-form-cgu {
+        margin-left: -232px !important;
+    }
+    #al_tpl5 #ez-body input#ez-register-form-cgu,
+    #sc_tpl5 #ez-body input#ez-register-form-cgu {
+        margin-left: -217px !important;
+    }
+
+    /* placement du fb connect */
+    .fb_connect {
+  margin-left: 212px !important;
+    }
+
+    /* Login top form - Rencontres Rondes tpl5 */
+    #rr_tpl5 #login div[id^=ez-login-form-container] button {
+        padding-left: 11px;
+    }
+
+
+    /* Etape 2 formulaire inscription - Modifier taille typo */
+    /* Rencontres rondes */
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(12) > label,
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(15) > label,
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(24) > label,
+    #rr_tpl5 #fieldset-ezformstep2 > dl > dt.partners-offers-label.optional > label {
+        font-size: 0.875em;
+    }
+    #fieldset-ezformstep2 > dl > dt:nth-child(27) > label {
+        font-size: 1em;
+    }
+    #rr_tpl5 .partners-offers-label {
+        line-height: 0.5em;
+    }
+    #rr_tpl5 #advertising-element {
+        height: 62px;
+        line-height: 62px !important;
+    }
+
+
+    /* SoCougar tpl5s */
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(12) > label,
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(15) > label,
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(24) > label,
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt.partners-offers-label.optional > label {
+        font-size: 0.875em;
+    }
+    #sc_tpl5 #fieldset-ezformstep2 > dl > dt:nth-child(27) > label {
+        font-size: 1em;
+    }
+    #sc_tpl5 .partners-offers-label {
+        line-height: 1em;
+    }
+    #sc_tpl #webcam-element {
+        height: 42px !important;
+        line-height: 42px !important;
+    }
+    #sc_tpl5 #advertising-element {
+        height: 48px !important;
+        line-height: 48px !important;
+    }
+
+
+    /* Specifique TF1 Ã©tape 2 */
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt:nth-child(12) > label,
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt:nth-child(24) > label,
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt.partners-offers-label.optional > label {
+        font-size: 0.875em;
+    }
+    #tf1_tpl #fieldset-ezformstep2 > dl > dt:nth-child(15) > label {
+        font-size: 0.75em;
+    }
+    #tf1_tpl .partners-offers-label {
+        line-height: 1em;
+    }
+    #tf1_tpl #fieldset-ezformstep2 > h3 { /* le titre du form */
+        margin-bottom: 55px !important;
+    }
+    #tf1_tpl #webcam-element {
+        height: 42px !important;
+        line-height: 42px !important;
+    }
+    #tf1_tpl #advertising-element {
+        height: 48px !important;
+        line-height: 48px !important;
+    }
+}

@@ -1,0 +1,94 @@
+#form {
+  background-color: transparent;
+  padding-bottom: 0;
+
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}
+
+form {
+  padding: 0 !important;
+}
+
+[id^="ez-register-form-container"] {
+  width: auto !important;
+}
+
+#ez-body h3 {
+  margin-bottom: 10px !important;
+}
+
+[id^="ez-register-form-container"] fieldset dl {
+  margin-top: 0 !important;
+}
+
+[id^="ez-register-form-container"] form#ez-register-form h3.legend {
+  background-color: $brand-danger !important;
+}
+
+.fb_connect {
+  display: none !important;
+}
+
+// Remplacement du texte initial
+[id^="ez-register-form-container"] form#ez-register-form h3.legend span {
+  @include replace-text('Finaliser votre demande');
+}
+
+#ez-body dt {
+  background-color: $brand-danger !important;
+}
+
+[for="ez-register-form-bornDate"] {
+  @include replace-text('Ne(e) le *');
+}
+
+[for="ez-register-form-email"] {
+  @include replace-text('Email *');
+}
+
+[for="ez-register-form-displayName"] {
+  @include replace-text('Pseudo *');
+}
+
+#ez-body #ez-register-form-bornDate-year {
+  width: 47% !important;
+}
+
+[id^="ez-register-form-container"] dt.cgu-label {
+  font-size: 15px !important;
+  text-transform: none;
+}
+
+#ez-body input#ez-register-form-cgu {
+  margin-left: -187px !important;
+}
+
+[id^="ez-register-form-container"] #ez-register-form-submit-element {
+  width: 100% !important;
+}
+
+#form button {
+  background-color: $brand-success !important;
+  border-color: $brand-success !important;
+}
+
+[id^="ez-register-form-container"] button span.middle {
+  @include replace-text('Valider');
+}
+
+[id^="ez-register-form-container"] #ez-register-form-submit-element::after {
+  content: "Les données collectées au cours de votre inscription sont destinées à la société 2L Multimédia, responsable du traitement ainsi qu'à ses partenaires.Elles sont destinées à vous proposer des rencontres en adéquation avec votre personnalité.Vous avez le droit de nous interroger, de rectifier, compléter, mettre à jour, verrouiller ou supprimer les données vous concernant, de vous opposer à leur traitement ou à leur utilisation à des fins de prospection commerciale à l'adresse mentionnée dans les CGU.";
+  display: block;
+  margin-top: $line-height-computed;
+  color: $text-color;
+  text-align: left;
+  text-transform: none;
+  font-size: 10px;
+  line-height: initial;
+}
+
+[id^="ez-register-form-container"] .ez-register-form-requried {
+  display: none;
+}
