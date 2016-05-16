@@ -18,10 +18,8 @@
   <form class="js-form-step-1">
     <div class="main-carousel js-carousel">
       {% for user in users %}
-        <!-- <img class="carousel-cell img-thumbnail"
-          src="dist/assets/img/photos/{{ user.picture }}" width="364" alt="Photo" data-user="{{ user|json }}"> -->
         <img class="carousel-cell img-thumbnail"
-          src="http://placehold.it/364x364" width="364" alt="Photo" data-user="{{ user|json }}">
+          src="dist/assets/img/photos/{{ user.picture }}" width="364" alt="Photo" data-user="{{ user|json }}">
       {% endfor %}
     </div>
 

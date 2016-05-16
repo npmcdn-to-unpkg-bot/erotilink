@@ -15,8 +15,7 @@
       var user = selectedElement.data('user');
 
       // Remplissage des données de l'utilisatrice sélectionnée
-      // $('.js-user-picture').attr('src', 'dist/assets/img/photos/' + user.picture);
-      $('.js-user-picture').attr('src', 'http://placehold.it/364x364');
+      $('.js-user-picture').attr('src', 'dist/assets/img/photos/' + user.picture);
       $('.js-user-name').text(user.name);
       $('.js-user-age').text(user.age);
     }
