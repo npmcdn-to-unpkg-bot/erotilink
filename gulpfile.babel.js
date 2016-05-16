@@ -56,6 +56,7 @@ gulp.task('scripts', () => {
     return gulp.src([
         'bower_components/jquery/dist/jquery.js',
         'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+        'bower_components/flickity/dist/flickity.pkgd.js',
         `${source}/assets/js/**/*`
     ])
 

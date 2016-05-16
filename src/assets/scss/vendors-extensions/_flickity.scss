@@ -1,0 +1,20 @@
+.carousel-cell {
+  width: 70%;
+  margin-right: 20px;
+
+  @media (min-width: $screen-sm-min) {
+    width: auto;
+    margin-right: 0;
+    transform: scale(.8);
+
+    &.is-selected {
+      transform: scale(1);
+    }
+  }
+}
+
+.flickity-prev-next-button {
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}
